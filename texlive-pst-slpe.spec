@@ -61,6 +61,7 @@ handling.
 %doc %{_texmfdistdir}/source/generic/pst-slpe/Makefile
 %doc %{_texmfdistdir}/source/generic/pst-slpe/pst-slpe.dtx
 %doc %{_texmfdistdir}/source/generic/pst-slpe/pst-slpe.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -71,3 +72,5 @@ handling.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar dvips tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
