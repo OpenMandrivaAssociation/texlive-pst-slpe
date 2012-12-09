@@ -61,3 +61,17 @@ handling.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar dvips tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.31-2
++ Revision: 755461
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.31-1
++ Revision: 719395
+- texlive-pst-slpe
+- texlive-pst-slpe
+- texlive-pst-slpe
+- texlive-pst-slpe
+
