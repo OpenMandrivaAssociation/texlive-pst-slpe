@@ -6,7 +6,7 @@
 # catalog-version 1.31
 Name:		texlive-pst-slpe
 Version:	1.31
-Release:	4
+Release:	5
 Summary:	Sophisticated colour gradients
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pst-slpe
