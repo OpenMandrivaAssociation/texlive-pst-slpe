@@ -1,19 +1,13 @@
-# revision 24391
-# category Package
-# catalog-ctan /graphics/pstricks/contrib/pst-slpe
-# catalog-date 2011-10-25 20:39:05 +0200
-# catalog-license lppl
-# catalog-version 1.31
 Name:		texlive-pst-slpe
-Version:	1.31
-Release:	11
+Version:	24391
+Release:	1
 Summary:	Sophisticated colour gradients
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pst-slpe
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-slpe.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-slpe.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-slpe.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-slpe.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-slpe.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-slpe.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -32,12 +26,12 @@ appearance; and - uses the xkeyval package for the extended key
 handling.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -54,24 +48,11 @@ handling.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar dvips tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.31-2
-+ Revision: 755461
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.31-1
-+ Revision: 719395
-- texlive-pst-slpe
-- texlive-pst-slpe
-- texlive-pst-slpe
-- texlive-pst-slpe
-
