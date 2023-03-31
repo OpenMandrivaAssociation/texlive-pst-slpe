@@ -1,6 +1,6 @@
 Name:		texlive-pst-slpe
 Version:	24391
-Release:	1
+Release:	2
 Summary:	Sophisticated colour gradients
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pst-slpe
