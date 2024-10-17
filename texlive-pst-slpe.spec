@@ -3,7 +3,7 @@ Version:	24391
 Release:	2
 Summary:	Sophisticated colour gradients
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pst-slpe
+URL:		https://www.ctan.org/tex-archive/graphics/pstricks/contrib/pst-slpe
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-slpe.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-slpe.doc.r%{version}.tar.xz
